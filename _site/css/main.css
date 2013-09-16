@@ -323,6 +323,9 @@ ul.triangles {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+/*
+ Sidebar
+*/
 
 .sidebar-radio {
   margin-left: 5px;
@@ -336,4 +339,17 @@ ul.triangles {
 .sidebar-radio input[type=radio], input.radio {
   float:left;
   margin: 2px 0 0 2px;
+}
+
+/*
+ Peopple
+*/
+.person {
+  margin-bottom: 15px;
+}
+.people-text {
+  padding-left: 10px;
+  display: table-cell;
+  height: 60px;
+  vertical-align: middle;
 }
