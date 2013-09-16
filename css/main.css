@@ -121,7 +121,9 @@ hr {
 /*
  Sharing Styles
 */
-
+.sharecenter {
+  padding: 30px 0;
+}
 .social-count {
     display: inline;
     position: relative;
