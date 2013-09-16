@@ -3,11 +3,48 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<h2>WHO WE ARE</h2>
+<hr/>
+<p>StopWatching.us is a coalition of other 100 public advocacy organizations and companies from across the political spectrum
+  standing together against mass surveillance.
+</p>
+<br/>
+<p>
+  <strong>PUBLIC ADVOCACY ORGANIZATIONS:</strong>
+</p>
+<div class="logos">
+  <a href=""><img style="width: 201px;" src="img/logos/eff.jpg" /></a>
+  <a href=""><img style="width: 125px;" src="img/logos/freepress.jpg" /></a>
+  <a href=""><img style="width: 129px;" src="img/logos/freedomworks.jpg" /></a>
+  <a href=""><img style="width: 120px;" src="img/logos/aclu.jpg" /></a>
+  <a href=""><img style="width: 85px;" src="img/logos/restorethefourth.jpg" /></a>
+  <a href=""><img style="width: 77px;" src="img/logos/cdt.jpg" /></a>
+  <a href=""><img style="width: 139px;" src="img/logos/demandprogress.jpg" /></a>
+  <div style="clear: both;"></div>
+  <a href=""><img style="width: 110px;" src="img/logos/mozilla.jpg" /></a>
+  <a href=""><img style="width: 195px;" src="img/logos/fightforthefuture.jpg" /></a>
+  <div style="clear: both;"></div>
 </div>
+<p class="red">+ Over 100 others. See the full list.</p>
+<p>
+<br/>
+  <strong>COMPANIES:</strong>
+</p>
+
+<div class="logos">
+  <a href=""><img style="width: 158px;" src="img/logos/thoughtworks.png" /></a>
+  <a href=""><img style="width: 120px;" src="img/logos/namecheap.png" /></a>
+  <a href=""><img style="width: 70px;" src="img/logos/cloudflare.jpg" /></a>
+  <a href=""><img style="width: 96px;" src="img/logos/reddit.jpg" /></a>
+  <div style="clear: both;"></div>
+</div>
+<br/><br/>
+<h2>NEWS</h2>
+<hr />
+{% for post in site.posts %}
+  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+  <strong>{{ post.date | date_to_string }}</strong>
+  <p>{{ post.excerpt }}</p>
+{% endfor %}
+            
+

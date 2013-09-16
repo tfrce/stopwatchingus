@@ -1,24 +1,10 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "NEW SPEAKER: JOE MCSPEAKER"
 date:   2013-09-16 18:25:28
 categories: jekyll update
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis hendrerit nulla eu placerat. Vestibulum hendrerit nisl libero, at sollicitudin nisi tincidunt vitae. Donec pharetra suscipit ligula. Quisque imperdiet, nibh at malesuada adipiscing, velit magna aliquam diam, a condimentum sapien ligula eu arcu. Sed eget tempus dolor.
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
-
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+ Nam consectetur eget ante ac posuere. Etiam convallis nibh at porttitor mattis. Praesent quis ornare odio. Cras nec aliquet nunc, id adipiscing tortor. Donec eget semper urna. Etiam dapibus ornare ligula ut rhoncus. Sed vehicula lacus nec euismod pellentesque. Fusce ullamcorper quis nunc ac convallis.
