@@ -1,11 +1,17 @@
-h1 {
+h1,
+.navbar-nav {
   font-family: "bebas-neue";
 }
 p {
   font-family: "proxima-nova";
 }
 
+.navbar-default .navbar-nav>li>a {
+  color: #211f20;
+  
+}
 .navbar {
+  font-size: 20px;
   background-image: none;
   box-shadow: none;
   margin-bottom: 0px;
