@@ -47,7 +47,9 @@ p {
   background-image: url(../img/banner-crowd.jpg);
   color: rgb(255, 255, 255);
   text-align: center;
-  height: 420px;
+  height: auto;
+  min-height: 400px;
+  padding-bottom: 20px;
 }
 
 #masthead-form{
@@ -106,7 +108,6 @@ p {
 
 .signup {
   width: 100%;
-  margin-left: 25px;
 }
 
 #main{
@@ -124,11 +125,6 @@ hr {
 
 .red {
   color: red;
-}
-
-#footer {
- background-color: rgb(212, 212, 212);
- min-height: 50px;
 }
 
 /*
@@ -312,7 +308,10 @@ ul.triangles {
 .footer {
   background: #d8d8d8;
   padding: 40px;
-  text-align: center;
+}
+
+.fade {
+  opacity: .5;
 }
 
 /* 
@@ -323,4 +322,18 @@ ul.triangles {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+.sidebar-radio {
+  margin-left: 5px;
+}
+
+.sidebar-radio label {
+  float:left;
+  padding: 2px 1em 0 0;
+}
+
+.sidebar-radio input[type=radio], input.radio {
+  float:left;
+  margin: 2px 0 0 2px;
 }
