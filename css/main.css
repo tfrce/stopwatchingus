@@ -275,6 +275,8 @@ hr {
 
 ul.triangles {
   list-style: none;
+  padding: 0;
+  margin: 0 15px;
 }
 
 .triangles li:before { 
