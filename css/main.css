@@ -8,7 +8,7 @@ p {
 
 .navbar-default .navbar-nav>li>a {
   color: #211f20;
-  
+
 }
 .navbar {
   font-size: 20px;
@@ -305,4 +305,14 @@ ul.triangles {
   background: #d8d8d8;
   padding: 40px;
   text-align: center;
+}
+
+/* 
+  Logos
+*/
+
+.logos a {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
 }
