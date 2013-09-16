@@ -291,3 +291,12 @@ ul.triangles {
     top: 0.9em;
     position: relative;
 }
+
+/*
+  Footer
+*/
+.footer {
+  background: #d8d8d8;
+  padding: 40px;
+  text-align: center;
+}
