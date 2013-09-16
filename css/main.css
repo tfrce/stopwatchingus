@@ -1,9 +1,15 @@
 h1,
 .navbar-nav {
-  font-family: "bebas-neue";
+  font-family: "bebas-neue", sans-serif;
 }
 h1{
-  font-size: 54px;
+  font-size: 52px;
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+h2 {
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
 }
 .subheading {
   font-size: 24px;
@@ -40,16 +46,31 @@ p {
 	padding-top: 20px;
 }
 
-#masthead{
+.jumbotron{
   border-top: 2px solid;
   border-color: rgb(254, 78, 56);
   padding-top: 50px;
-  background-image: url(../img/banner-crowd.jpg);
+  background: transparent url(../img/banner-crowd.jpg) 0 center;
   color: rgb(255, 255, 255);
   text-align: center;
   height: auto;
   min-height: 400px;
   padding-bottom: 20px;
+}
+
+.jumbotron.default h2 {
+  font-size:30px;
+}
+.jumbotron.default h1 {
+  font-size:59px;
+  margin-top:0px;
+}
+
+.jumbotron label {
+  font-size: 24px;
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-weight:normal;
 }
 
 #masthead-form{
@@ -59,13 +80,13 @@ p {
   padding-left: 0px;
   padding-right: 0px;
 }
-#masthead input {
+.jumbotron input {
   border-bottom-color: rgb(255, 255, 255);
   color: white;
 }
 
 .flatinput{
-  width: 100%;
+  /*width: 100%;
   background-color: transparent;
   border-bottom-color: rgb(212, 212, 212);
   border-bottom-left-radius: 0px;
@@ -102,7 +123,20 @@ p {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
   -moz-border-right-colors: none;
-  -moz-border-top-colors: none;
+  -moz-border-top-colors: none;*/
+
+  margin-bottom: 0;
+text-align: center;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #f1c40f;
+color: #f1c40f;
+border-radius: 0px;
+font-size: 16px;
+display: inline;
+float: left;
+padding-top: 7px;
+padding-bottom: 0px
 }
 
 
