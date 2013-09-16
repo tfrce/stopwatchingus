@@ -1,6 +1,15 @@
 stopwatchingus
 ==============
 
+## Development
+
+Learn Jekyll
+
+```
+jekyll serve --watch
+```
+
+
 ## Deployment
 
 We deploy via pushing to a git repository on the production server. To add the remote origin
