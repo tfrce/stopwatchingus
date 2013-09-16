@@ -1,0 +1,119 @@
+h1 {
+  font-family: "bebas-neue";
+}
+p {
+  font-family: "proxima-nova";
+}
+
+.navbar {
+  background-image: none;
+  box-shadow: none;
+  margin-bottom: 0px;
+  float: none;
+}
+
+.navbar-default {
+  background-color: rgb(255,255,255);
+  border: none;
+}
+.navbar-brand{
+  padding-left: 0px;
+}
+
+.navbar-static-top {
+    border-width: 0px 0px 2px;
+}
+.navbar-right {
+	padding-top: 20px;
+}
+
+#masthead{
+  border-top: 2px solid;
+  border-color: rgb(254, 78, 56);
+  padding-top: 50px;
+  background-image: url(../img/banner-crowd.jpg);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 420px;
+}
+
+#masthead-form{
+  margin: auto;
+}
+.nopad {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#masthead input {
+  border-bottom-color: rgb(255, 255, 255);
+  color: white;
+}
+
+.flatinput{
+  width: 100%;
+  background-color: transparent;
+  border-bottom-color: rgb(212, 212, 212);
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-image-outset: 0 0 0 0;
+  border-image-repeat: stretch stretch;
+  border-image-slice: 100% 100% 100% 100%;
+  border-image-source: none;
+  border-image-width: 1 1 1 1;
+  border-left-color: rgb(241, 196, 15);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(241, 196, 15);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-top: 0;
+  box-shadow: rgba(0, 0, 0, 0.075) 0px 0px 1px 0px inset;
+  display: block;
+  float: left;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  margin-left: 3px;
+  padding-bottom: 0px;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: border, box-shadow;
+  transition-timing-function: cubic-bezier(0, 0, 1, 1), cubic-bezier(0, 0, 1, 1);
+  vertical-align: middle;
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+}
+
+
+.signup {
+  width: 100%;
+  margin-left: 25px;
+}
+
+#main{
+  margin-top: 30px;
+}
+
+hr {
+  display: block; 
+  height: 1px;
+  border: 0; 
+  border-top: 1px solid rgb(254, 78, 56);
+  margin: 1em 0; 
+  padding: 0;
+}
+
+.red {
+  color: red;
+}
+
+#footer {
+ background-color: rgb(212, 212, 212);
+ min-height: 50px;
+}
