@@ -1,0 +1,17 @@
+The stopwatching.us site is hosted on rackspace cloud.  There's just one server since it's a static site.
+
+The server was put up by jdunck, and isn't managed by chef or puppet, etc.  That'd be nice, but this was done in a hurry.
+
+Stack diagram:
+
+-----
+
+services:       rackspace          -> ssl               -> http                              -> static files
+configuration:  stopwatching1      -> /etc/             -> ./sites-available/stopwatching.us
+daemons:        166.78.255.254:443 -> pound             -> nginx                             -> /home/jdunck/src/stopwatchingus/
+admin:          ssh  root@            /etc/init.d/pound -> /etc/init.d/nginx                 -> cd /home/jdunck/src/stopwatchingus/ && git pull
+
+------
+
+root password is... a secret. (see the secrets doc)
+
