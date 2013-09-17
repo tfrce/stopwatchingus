@@ -1,15 +1,14 @@
-h1,
-.navbar-nav {
-  font-family: "bebas-neue", sans-serif;
+body {
+  -webkit-font-smoothing:antialiased;
 }
+
+h1, h2, .navbar-nav {
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
 h1{
   font-size: 52px;
-  font-family: "bebas-neue", sans-serif;
-  -webkit-font-smoothing:antialiased;
-}
-h2 {
-  font-family: "bebas-neue", sans-serif;
-  -webkit-font-smoothing:antialiased;
 }
 .subheading {
   font-size: 24px;
@@ -17,6 +16,7 @@ h2 {
 }
 p {
   font-family: "proxima-nova";
+  font-size:16px;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -184,7 +184,7 @@ button.signup {
   width: 100%;
 }
 
-#main{
+.main{
   margin-top: 30px;
 }
 
@@ -197,8 +197,22 @@ hr {
   padding: 0;
 }
 
-.red {
+.content h2 {
+  font-size: 36px;
+  border-bottom: 1px red solid;
+  margin-bottom:20px;
+}
+
+.content h3 {
+  font-size:14px;
+  font-weight: 600;
+  margin: 35px 0 25px 0;
+}
+
+.seemore {
   color: red;
+  margin: 15px 0 30px 0;
+  font-size:14px;
 }
 
 /*
@@ -393,9 +407,6 @@ ul.triangles {
 */
 
 .logos a {
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 30px;
 }
 /*
  Sidebar
@@ -426,4 +437,9 @@ ul.triangles {
   display: table-cell;
   height: 60px;
   vertical-align: middle;
+  font-size:13px;
+}
+
+.people-text strong {
+  font-size:14px;
 }
