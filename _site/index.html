@@ -26,6 +26,7 @@
               </button>
               <a class="navbar-brand" href="#"><img src="/img/logo-header.png"></a>
             </div>
+            <!--
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">SIGN UP</a></li>
@@ -33,7 +34,7 @@
                 <li><a href="#">BLOG</a></li>
                 <li><a href="#">FAQ</a></li>
               </ul>
-            </div><!--/.nav-collapse -->
+            </div> --> 
           </div>
         </div>
       </div>
@@ -46,7 +47,7 @@
             </div>
 
             <div class="signupform">
-             <form class="form-horizontal" role="form">
+             <form class="emailsignup form-horizontal" role="form">
               <div class="form-group">
                 <label for="inputEmail1" class="col-lg-2 control-label nopad">NAME:</label>
                 <div class="col-lg-8 nopad">
@@ -57,7 +58,7 @@
                 <label for="inputPassword1" class="col-lg-2 control-label nopad">EMAIL:</label>
                 <div class="col-lg-8 nopad">
                   <input type="text" id="inputPassword1" class="flatinput">
-                </div>
+                </div> 
               </div>
               <div class="form-group">
                   <button type="button" class="btn btn-danger btn-lg signup">SIGN UP TO ATTEND</button>
@@ -70,6 +71,32 @@
         <div class="container">
           <div id="main">
             <div class="col-lg-7 col-lg-offset-1">
+            <!-- Begin MailChimp Signup Form -->
+<div id="mc_embed_signup">
+<form action="http://sina.us7.list-manage.com/subscribe/post-json?u=c148127741902298dd3205c12&amp;id=c05d6bd75f&amp;c=?" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate mcsignup" target="_blank" novalidate>
+  <h2>Subscribe to our mailing list</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+  <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+  <label for="mce-FNAME">First Name </label>
+  <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+</div>
+<div class="mc-field-group">
+  <label for="mce-LNAME">Last Name </label>
+  <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>  <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
               <h2>WHO WE ARE</h2>
 <hr/>
 <p>StopWatching.us is a coalition of other 100 public advocacy organizations and companies from across the political spectrum
@@ -164,13 +191,13 @@
 <h2>NEWS</h2>
 <hr />
 
-  <h3><a href="/jekyll/update/2013/09/16/welcome-to-jekyll.html">NEW SPEAKER: JOE MCSPEAKER</a></h3>
-  <strong>16 Sep 2013</strong>
+  <h3><a href="/jekyll/update/2013/09/17/welcome-to-jekyll.html">NEW SPEAKER: JOE MCSPEAKER</a></h3>
+  <strong>17 Sep 2013</strong>
   <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis hendrerit nulla eu placerat. Vestibulum hendrerit nisl libero, at sollicitudin nisi tincidunt vitae. Donec pharetra suscipit ligula. Quisque imperdiet, nibh at malesuada adipiscing, velit magna aliquam diam, a condimentum sapien ligula eu arcu. Sed eget tempus dolor.</p>
 </p>
 
-  <h3><a href="/jekyll/update/2013/09/16/test-blog.html">ANOUNCING THE RALLY AGAINST MASS SURVEILLACE</a></h3>
-  <strong>16 Sep 2013</strong>
+  <h3><a href="/jekyll/update/2013/09/17/test-blog.html">ANOUNCING THE RALLY AGAINST MASS SURVEILLACE</a></h3>
+  <strong>17 Sep 2013</strong>
   <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis hendrerit nulla eu placerat. Vestibulum hendrerit nisl libero, at sollicitudin nisi tincidunt vitae. Donec pharetra suscipit ligula. Quisque imperdiet, nibh at malesuada adipiscing, velit magna aliquam diam, a condimentum sapien ligula eu arcu. Sed eget tempus dolor. </p>
 </p>
 
@@ -205,38 +232,31 @@
   <li>Live Music.</li>
  </ul>
  <h4>SIGN UP NOW:</h4>
- <form class="form-horizontal" role="form">
-    <div class="form-group">
-      <label for="inputEmail1" class="col-lg-2  col-lg-offset-1 control-label nopad">NAME:</label>
-      <div class="col-lg-7 nopad">
-        <input type="email" id="inputEmail1" class="flatinput" >
-      </div>
-    </div>
+ <form class="mcsignup form-horizontal" role="form">
     <div class="form-group">
       <label for="inputPassword1" class="col-lg-2 col-lg-offset-1 control-label nopad">EMAIL:</label>
       <div class="col-lg-7 nopad">
-        <input type="text" id="inputPassword1" class="flatinput">
+        <input type="text" id="inputPassword1" name="email" class="flatinput">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputEmail1" class="col-lg-2  col-lg-offset-1 control-label nopad">NAME:</label>
+      <div class="col-lg-7 nopad">
+        <input type="email" id="inputEmail1" class="flatinput" name="name" >
       </div>
     </div>
     <div class="form-group">
       <label for="inputPassword1" class="col-lg-2 col-lg-offset-1 control-label nopad">PHONE:</label>
       <div class="col-lg-7 nopad">
-        <input type="text" id="inputPassword1" class="flatinput">
+        <input type="text" id="inputPassword1" class="flatinput" name="phone">
       </div>
     </div>
     <div class="form-group">
       <label for="inputPassword1" class="col-lg-3 col-lg-offset-1 control-label nopad">ZIPCODE:</label>
       <div class="col-lg-6 nopad">
-        <input type="text" id="inputPassword1" class="flatinput">
+        <input type="text" id="inputPassword1" class="flatinput" name="zipcode">
       </div>
     </div>
-      <div class="sidebar-radio">
-        <strong class="pull-left">VOLUNTEER?</strong>
-        <input type="radio" class="radio" name="x" value="y" id="y" />
-        <label for="y">Yes</label>
-        <input type="radio" class="radio" name="x" value="z" id="z" />
-        <label for="z">No</label>
-      </div>
     <div class="form-group">
       <div class="col-lg-6">
         <button type="submit" class="btn btn-danger btn-lg">SIGN UP TO ATTEND</button>
@@ -260,6 +280,39 @@
           </div>
         </div>
       </div>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.form/3.32/jquery.form.min.js"></script>
+      <script>
+      $.fn.serializeObject = function() {
+          var o = {};
+          var a = this.serializeArray();
+          $.each(a, function() {
+              if (o[this.name] !== undefined) {
+                  if (!o[this.name].push) {
+                      o[this.name] = [o[this.name]];
+                  }
+                  o[this.name].push(this.value || '');
+              } else {
+                  o[this.name] = this.value || '';
+              }
+          });
+          return o;
+      };
+      $(document).ready( function () {
+          // I only have one form on the page but you can be more specific if need be.
+          $('.mcsignup').on('submit', function(ev){
+            var form = $(ev.currentTarget);
+            var data = form.serializeObject();
+            $.ajax({
+              url: 'http://skipchimp.herokuapp.com/subscribe',
+              data: data,
+              type: 'POST'
+            })
+            return false;
+          })
+      });
+
+      </script>
       <script src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="//use.typekit.net/cdj3zbf.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
