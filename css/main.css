@@ -86,14 +86,11 @@ p {
   color: white;
 }
 
-.jumbotron .signupform {
+.jumbotron .signupform, .jumbotron .form-group {
   max-width:340px;
   margin: 0 auto;
 }
 
-.jumbotron .form-group {
-  margin-bottom:0;
-}
 
 .flatinput{
   /*width: 100%;
@@ -161,9 +158,6 @@ font-weight:200;
   line-height: 31px;
 }
 
-.jumbotron .form-group {
-  margin:0;
-}
 
 .jumbotron .form-group div {
   line-height:34px;
