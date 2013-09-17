@@ -437,3 +437,11 @@ ul.triangles {
 .people-text strong {
   font-size:14px;
 }
+
+.optionallabel {
+  text-decoration: underline;
+font-size: 23px;
+text-align: center !important;
+display: block;
+width: 100%;
+}

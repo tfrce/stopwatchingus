@@ -47,39 +47,41 @@
             <h1>A Rally Against Mass Surveillance</h1>
           </div>
 
-            <div class="signupform">
+            <div class="signupform signupform-container">
              <form class="mcsignup emailsignup form-horizontal" role="form">
               <div class="form-group">
-                <label for="inputEmail1" class="col-lg-2 control-label nopad">NAME:</label>
+                <label for="email" class="col-lg-2 control-label nopad">EMAIL:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="email" id="inputEmail1" class="flatinput hero-name-input" name="name" >
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="email1" class="col-lg-2 control-label nopad">EMAIL:</label>
-                <div class="col-lg-8 nopad">
-                  <input type="text" id="email1" class="flatinput email-field" name="email">
+                  <input type="text" id="email" class="flatinput email-field hero-email-input" name="email">
                 </div> 
               </div>
               <div class="form-group" style="display: none;">
-                <label for="inputEmail1" class="col-lg-2 control-label nopad">PHONE:</label>
+                <label for="" class="optionallabel col-lg-2 control-label nopad">Optional</label>
+                </div>
+              <div class="form-group"  style="display: none;">
+                <label for="name" class="col-lg-2 control-label nopad">NAME:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="email" id="inputEmail1" class="flatinput" name="phone">
+                  <input type="text" id="name" class="flatinput hero-name-input" name="name" >
                 </div>
               </div>
               <div class="form-group" style="display: none;">
-                <label for="email1" class="col-lg-2 control-label nopad">ZIPCODE:</label>
+                <label for="phone" class="col-lg-2 control-label nopad">PHONE:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="text" id="email1" class="flatinput email-field" name="zipcode">
-                </div> 
-
+                  <input type="text" id="phone" class="flatinput" name="phone">
+                </div>
               </div>
+              <div class="form-group" style="display: none;">
+                <label for="zipcode" class="col-lg-2 control-label nopad">ZIPCODE:</label>
+                <div class="col-lg-8 nopad">
+                  <input type="text" id="zipcode" class="flatinput" name="zipcode">
+                </div> 
+              </div>
+                <div class="form-group">
+                    <button type="submit" class="col-lg-2  btn btn-danger btn-lg signup validate-submit">SIGN UP TO ATTEND</button>
+                    <div id="status1" style="height: 95px;">&#160;</div>
+                </div>
+              </form>
             </div>
-            <div class="form-group">
-                <button type="button" class="btn btn-danger btn-lg signup validate-submit">SIGN UP TO ATTEND</button>
-                <div id="status1">&#160;</div>
-            </div>
-          </form>
           </div>
         </div>
       </div>
@@ -175,13 +177,13 @@
 <br/><br/>
 <h2>NEWS</h2>
 
-  <h3><a href="/jekyll/update/2013/09/16/welcome-to-jekyll.html">NEW SPEAKER: JOE MCSPEAKER</a></h3>
-  <strong>16 Sep 2013</strong>
+  <h3><a href="/jekyll/update/2013/09/17/welcome-to-jekyll.html">NEW SPEAKER: JOE MCSPEAKER</a></h3>
+  <strong>17 Sep 2013</strong>
   <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis hendrerit nulla eu placerat. Vestibulum hendrerit nisl libero, at sollicitudin nisi tincidunt vitae. Donec pharetra suscipit ligula. Quisque imperdiet, nibh at malesuada adipiscing, velit magna aliquam diam, a condimentum sapien ligula eu arcu. Sed eget tempus dolor.</p>
 </p>
 
-  <h3><a href="/jekyll/update/2013/09/16/test-blog.html">ANOUNCING THE RALLY AGAINST MASS SURVEILLACE</a></h3>
-  <strong>16 Sep 2013</strong>
+  <h3><a href="/jekyll/update/2013/09/17/test-blog.html">ANOUNCING THE RALLY AGAINST MASS SURVEILLACE</a></h3>
+  <strong>17 Sep 2013</strong>
   <p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mattis hendrerit nulla eu placerat. Vestibulum hendrerit nisl libero, at sollicitudin nisi tincidunt vitae. Donec pharetra suscipit ligula. Quisque imperdiet, nibh at malesuada adipiscing, velit magna aliquam diam, a condimentum sapien ligula eu arcu. Sed eget tempus dolor. </p>
 </p>
 
@@ -285,121 +287,56 @@
       };
       $(document).ready( function () {
           // I only have one form on the page but you can be more specific if need be.
-          $('.hero-name-input').on('focus', function (){ 
-            $('.jumbotron .form-group').slideDown(250);
+          $('.hero-email-input').on('focus', function (){ 
+            $('.jumbotron .form-group').slideDown(550);
           })
 
           $('.mcsignup').on('submit', function(ev){
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
-            $.ajax({
-              url: 'http://skipchimp.herokuapp.com/subscribe',
-              data: data,
-              type: 'POST'
+            $('#status1').text('Checking email...')
+            validateEmail(data.email, {
+              success: function () {
+                $('#status1').empty();
+                $.ajax({
+                  url: 'http://skipchimp.herokuapp.com/subscribe',
+                  data: data,
+                  type: 'POST',
+                  success: function () {
+                    $('.signupform-container').empty();
+                    $('.signupform-container').text('Thanks for your support!');
+
+                  }
+                })
+              }, 
+              error: function () {
+                $('#status1').text('Email address is invalid');
+              }
             })
             return false;
-          })
+          });
+          var validateEmail = function (email, options) {
+            $.ajax({
+              type: "GET",
+              url: 'https://api.mailgun.net/v2/address/validate?callback=?',
+              data: { address: email, api_key: 'pubkey-2pjzaxwf7x7thcgvc7u0xhi17yrp1lv3' },
+              dataType: "jsonp",
+              crossDomain: true,
+              success: function(data, status_text) {
+                if(data.is_valid) {
+                  options.success(data);
+                } else {
+                  options.error();
+                }
+              },
+              error: function(request, status_text, error) {
+                options.error();
+              }
+          });
+          }
       });
 
       </script>
       <script src="/js/bootstrap.min.js"></script>
-      <script type="text/javascript" src="/js/mailgunvalidate.js"></script>
-      <script type="text/javascript">
-            
-            $(function() {
-                // clear username input field
-                $('.email-field').val('');
-
-                // capture all enter and do nothing
-                $('.email-field').keypress(function(e) {
-                    if(e.which == 13) {
-                        $('.email-field').trigger('focusout');
-                        return false;
-                    }
-                });
-
-                // capture clicks on validate and do nothing
-                $('.validate-submit').click(function() {
-                    return false;
-                });
-
-                // attach jquery plugin to validate address
-                $('.email-field').mailgun_validator({
-                    api_key: 'pubkey-2pjzaxwf7x7thcgvc7u0xhi17yrp1lv3',
-                    in_progress: validation_in_progress,
-                    success: validation_success,
-                    error: validation_error,
-                });
-            });
-
-
-            function validation_in_progress() {
-                rdiv = $('#' + getSelectedFormError())
-
-                // empty out anything we had before
-                rdiv.empty()
-            }
-
-
-            function validation_success(data) {
-                rdiv = $('#' + getSelectedFormError())
-
-                // get icon and suggestion strings
-                //icon_str = get_icon_str(data['is_valid'], data['did_you_mean'] != null);
-                sugg_str = get_suggestion_str(data['is_valid'], data['did_you_mean'])
-
-                // clear out any previous text
-                rdiv.empty()
-
-                // set icon and suggestion string
-                //rdiv.append(icon_str + ' ' + sugg_str);
-                rdiv.append(sugg_str);
-            }
-
-
-            function validation_error(error_message) {
-                rdiv = $('#' + getSelectedFormError())
-
-                // empty out anything we had before
-                rdiv.empty()
-
-                // show in progress
-                rdiv.append(error_message);
-            }
-
-
-            function get_suggestion_str(is_valid, alternate) {
-                if (alternate) {
-                    return '<b class="red">Did you mean:</b> ' +
-                           '<b><i>' +  alternate + '</i></b>';
-                }
-
-                if (is_valid) {
-                    return "Address is valid.";
-                }
-
-                return "Address is invalid."
-            }
-            /**
-            function get_icon_str(is_valid, has_alternate) {
-                if (is_valid && !has_alternate) {
-                    return "<img src='icons/valid-color.png' style='vertical-align:middle'/>";
-                }
-
-                if (is_valid && has_alternate) {
-                    return "<img src='icons/did-you-mean-color.png' style='vertical-align:middle'/>";
-                }
-
-                if (!is_valid) {
-                    return "<img src='icons/invalid-color.png' style='vertical-align:middle'/>";
-                }
-            }
-            **/
-            function getSelectedFormError(){
-                if($('#email2').val())
-                  return "status2"
-                return "status1"
-            } 
-      </script>
     </body>
 </html>
