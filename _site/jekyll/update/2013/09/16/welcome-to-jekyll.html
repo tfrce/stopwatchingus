@@ -56,13 +56,14 @@
                 </div>
               </div>
               <div class="form-group">
-                <label for="inputPassword1" class="col-lg-2 control-label nopad">EMAIL:</label>
+                <label for="email1" class="col-lg-2 control-label nopad">EMAIL:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="text" id="inputPassword1" class="flatinput">
-                </div>
+                  <input type="text" id="email1" class="flatinput email-field">
+                </div> 
               </div>
               <div class="form-group">
-                  <button type="button" class="btn btn-danger btn-lg signup">SIGN UP TO ATTEND</button>
+                  <button type="button" class="btn btn-danger btn-lg signup validate-submit">SIGN UP TO ATTEND</button>
+                  <div id="status1">&#160;</div>
               </div>
             </form>
             </div>
@@ -138,15 +139,15 @@
  <h4>SIGN UP NOW:</h4>
  <form class="mcsignup form-horizontal" role="form">
     <div class="form-group">
-      <label for="inputPassword1" class="col-lg-2 col-lg-offset-1 control-label nopad">EMAIL:</label>
+      <label for="email2" class="col-lg-2 col-lg-offset-1 control-label nopad">EMAIL:</label>
       <div class="col-lg-7 nopad">
-        <input type="text" id="inputPassword1" name="email" class="flatinput">
+        <input type="email" id="email2" name="email" class="flatinput email-field">
       </div>
     </div>
     <div class="form-group">
-      <label for="inputEmail1" class="col-lg-2  col-lg-offset-1 control-label nopad">NAME:</label>
+      <label for="name2" class="col-lg-2  col-lg-offset-1 control-label nopad">NAME:</label>
       <div class="col-lg-7 nopad">
-        <input type="email" id="inputEmail1" class="flatinput" name="name" >
+        <input type="text" id="name2"class="flatinput" name="name">
       </div>
     </div>
     <div class="form-group">
@@ -163,9 +164,10 @@
     </div>
     <div class="form-group">
       <div class="col-lg-6">
-        <button type="submit" class="btn btn-danger btn-lg">SIGN UP TO ATTEND</button>
+        <button type="submit" class="btn btn-danger btn-lg validate-submit">SIGN UP TO ATTEND</button>
       </div>
     </div>
+    <div id="status2">&#160;</div>
   </form>
 
             </div>
@@ -220,5 +222,103 @@
       <script src="/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="//use.typekit.net/cdj3zbf.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+      <script type="text/javascript" src="/js/mailgunvalidate.js"></script>
+      <script type="text/javascript">
+            
+            $(function() {
+                // clear username input field
+                $('.email-field').val('');
+
+                // capture all enter and do nothing
+                $('.email-field').keypress(function(e) {
+                    if(e.which == 13) {
+                        $('.email-field').trigger('focusout');
+                        return false;
+                    }
+                });
+
+                // capture clicks on validate and do nothing
+                $('.validate-submit').click(function() {
+                    return false;
+                });
+
+                // attach jquery plugin to validate address
+                $('.email-field').mailgun_validator({
+                    api_key: 'pubkey-2pjzaxwf7x7thcgvc7u0xhi17yrp1lv3',
+                    in_progress: validation_in_progress,
+                    success: validation_success,
+                    error: validation_error,
+                });
+            });
+
+
+            function validation_in_progress() {
+                rdiv = $('#' + getSelectedFormError())
+
+                // empty out anything we had before
+                rdiv.empty()
+            }
+
+
+            function validation_success(data) {
+                rdiv = $('#' + getSelectedFormError())
+
+                // get icon and suggestion strings
+                //icon_str = get_icon_str(data['is_valid'], data['did_you_mean'] != null);
+                sugg_str = get_suggestion_str(data['is_valid'], data['did_you_mean'])
+
+                // clear out any previous text
+                rdiv.empty()
+
+                // set icon and suggestion string
+                //rdiv.append(icon_str + ' ' + sugg_str);
+                rdiv.append(sugg_str);
+            }
+
+
+            function validation_error(error_message) {
+                rdiv = $('#' + getSelectedFormError())
+
+                // empty out anything we had before
+                rdiv.empty()
+
+                // show in progress
+                rdiv.append(error_message);
+            }
+
+
+            function get_suggestion_str(is_valid, alternate) {
+                if (alternate) {
+                    return '<b class="red">Did you mean:</b> ' +
+                           '<b><i>' +  alternate + '</i></b>';
+                }
+
+                if (is_valid) {
+                    return "Address is valid.";
+                }
+
+                return "Address is invalid."
+            }
+            /**
+            function get_icon_str(is_valid, has_alternate) {
+                if (is_valid && !has_alternate) {
+                    return "<img src='icons/valid-color.png' style='vertical-align:middle'/>";
+                }
+
+                if (is_valid && has_alternate) {
+                    return "<img src='icons/did-you-mean-color.png' style='vertical-align:middle'/>";
+                }
+
+                if (!is_valid) {
+                    return "<img src='icons/invalid-color.png' style='vertical-align:middle'/>";
+                }
+            }
+            **/
+            function getSelectedFormError(){
+                if($('#email2').val())
+                  return "status2"
+                return "status1"
+            } 
+      </script>
     </body>
 </html>
