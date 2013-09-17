@@ -71,6 +71,7 @@ p {
   font-family: "bebas-neue", sans-serif;
   -webkit-font-smoothing:antialiased;
   font-weight:normal;
+  float:left;
 }
 
 #masthead-form{
@@ -83,6 +84,15 @@ p {
 .jumbotron input {
   border-bottom-color: rgb(255, 255, 255);
   color: white;
+}
+
+.jumbotron .signupform {
+  max-width:340px;
+  margin: 0 auto;
+}
+
+.jumbotron .form-group {
+  margin-bottom:0;
 }
 
 .flatinput{
@@ -125,22 +135,52 @@ p {
   -moz-border-right-colors: none;
   -moz-border-top-colors: none;*/
 
-  margin-bottom: 0;
+margin-bottom: 0;
 text-align: center;
 background-color: transparent;
 border: none;
-border-bottom: 1px solid #f1c40f;
+border-bottom: 1px solid #fff;
 color: #f1c40f;
 border-radius: 0px;
 font-size: 16px;
 display: inline;
-float: left;
-padding-top: 7px;
-padding-bottom: 0px
+padding-top: 0px;
+padding-bottom: 0px;
+margin-top: 0px;
+line-height: 10px;
+margin-left: 8px;
+font-weight:200;
 }
 
+.jumbotron .flatinput {
+  width: 270px;
+}
 
-.signup {
+.jumbotron .control-label {
+  text-align:left;
+  line-height: 31px;
+}
+
+.jumbotron .form-group {
+  margin:0;
+}
+
+.jumbotron .form-group div {
+  line-height:34px;
+}
+
+.jumbotron button {
+  margin-top:20px;
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-size:24px;
+}
+
+.flatinput:focus {
+    outline-width: 0;
+}
+
+button.signup {
   width: 100%;
 }
 
