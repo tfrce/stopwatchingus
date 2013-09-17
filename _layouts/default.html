@@ -48,17 +48,29 @@
             </div>
 
             <div class="signupform">
-             <form class="emailsignup form-horizontal" role="form">
+             <form class="mcsignup emailsignup form-horizontal" role="form">
               <div class="form-group">
                 <label for="inputEmail1" class="col-lg-2 control-label nopad">NAME:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="email" id="inputEmail1" class="flatinput" >
+                  <input type="email" id="inputEmail1" class="flatinput hero-name-input" name="name" >
                 </div>
               </div>
               <div class="form-group">
                 <label for="email1" class="col-lg-2 control-label nopad">EMAIL:</label>
                 <div class="col-lg-8 nopad">
-                  <input type="text" id="email1" class="flatinput email-field">
+                  <input type="text" id="email1" class="flatinput email-field" name="email">
+                </div> 
+              </div>
+              <div class="form-group" style="display: none;">
+                <label for="inputEmail1" class="col-lg-2 control-label nopad">PHONE:</label>
+                <div class="col-lg-8 nopad">
+                  <input type="email" id="inputEmail1" class="flatinput" name="phone">
+                </div>
+              </div>
+              <div class="form-group" style="display: none;">
+                <label for="email1" class="col-lg-2 control-label nopad">ZIPCODE:</label>
+                <div class="col-lg-8 nopad">
+                  <input type="text" id="email1" class="flatinput email-field" name="zipcode">
                 </div> 
               </div>
               <div class="form-group">
@@ -114,6 +126,10 @@
       };
       $(document).ready( function () {
           // I only have one form on the page but you can be more specific if need be.
+          $('.hero-name-input').on('focus', function (){ 
+            $('.jumbotron .form-group').slideDown(250);
+          })
+
           $('.mcsignup').on('submit', function(ev){
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
