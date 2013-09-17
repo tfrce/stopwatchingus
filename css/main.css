@@ -133,7 +133,7 @@ p {
   -moz-border-top-colors: none;*/
 
 margin-bottom: 0;
-text-align: center;
+text-align: left;
 background-color: transparent;
 border: none;
 border-bottom: 1px solid #fff;
@@ -436,4 +436,12 @@ ul.triangles {
 
 .people-text strong {
   font-size:14px;
+}
+
+.optionallabel {
+  text-decoration: underline;
+font-size: 23px;
+text-align: center !important;
+display: block;
+width: 100%;
 }
