@@ -316,6 +316,7 @@
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
             $('.status1', form).text('Checking email...')
+            $('button', form).text('SIGNING UP...')
             validateEmail(data.email, {
               success: function () {
                 $('.status1', form).empty();
@@ -324,14 +325,18 @@
                   data: data,
                   type: 'POST',
                   success: function () {
-                    $('.signupform-container').empty();
-                    $('.signupform-container').text('Thanks for your support!');
-
+                    $(form).empty();
+                    $(form).text('Thanks for your support, redirecting...');
+                    setTimeout(function () {
+                      window.location = "http://shpg.org/89/604";
+                    }, 500);
                   }
                 })
               }, 
               error: function () {
                 $('.status1', form).text('Email address is invalid');
+                $('button', form).text('SIGN UP TO ATTEND')
+
               }
             })
             return false;
