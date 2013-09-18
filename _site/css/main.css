@@ -173,6 +173,10 @@ font-weight:200;
   max-width:400px;
 }
 
+.sidebar button {
+  margin-bottom: 60px;
+}
+
 .flatinput:focus {
     outline-width: 0;
 }
