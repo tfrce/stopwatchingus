@@ -83,17 +83,20 @@ title: Stop Watching Us
 
 
 <div class="logos">
-  <a class="col-xs-6 col-sm-6 col-md-3 col-lg-3" href="http://www.thoughtworks.com/"><img class="img-responsive" src="img/logos/thoughtworks.png" /></a>
-  <a class="col-xs-6 col-sm-6 col-md-3 col-lg-3" href="http://namecheap.com"><img class="img-responsive" src="img/logos/namecheap.png" /></a>
-  <a class="col-xs-6 col-sm-6 col-md-3 col-lg-3" href="http://reddit.com"><img class="img-responsive" src="img/logos/reddit.jpg" /></a>
+  <a class="col-xs-6 col-sm-6 col-md-4 col-lg-3" href="http://www.thoughtworks.com/"><img class="img-responsive" src="img/logos/thoughtworks.png" /></a>
+  <a class="col-xs-6 col-sm-6 col-md-4 col-lg-3" href="http://namecheap.com"><img class="img-responsive" src="img/logos/namecheap.jpg" /></a>
+  <a class="col-xs-6 col-sm-6 col-md-4 col-lg-3" href="http://reddit.com"><img class="img-responsive" src="img/logos/reddit.jpg" /></a>
   <div style="clear: both;"></div>
 <p class="seemore"><a href="companies.html">+ Over 20 others. See the full list.</a></p>
 
 </div>
-<br/><br/>
-<h2>NEWS</h2>
-{% for post in site.posts %}
-  <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-  <strong>{{ post.date | date_to_string }}</strong>
-  <p>{{ post.excerpt }}</p>
-{% endfor %}
+
+<div class="news">
+  <h2>NEWS</h2>
+  {% for post in site.posts %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <strong>{{ post.date | date_to_string }}</strong>
+    <p>{{ post.excerpt }}</p>
+    <p><a href="{{ post.url }}">Read more ...</a></p>
+  {% endfor %}
+</div>

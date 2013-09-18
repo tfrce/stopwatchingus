@@ -211,6 +211,36 @@ hr {
   font-size:14px;
 }
 
+.seemore a {
+  color: #e54b3d;
+  font-weight:600;
+}
+
+.whoweare {
+  margin-bottom:60px;
+}
+
+
+/*
+ News on the homepage
+*/
+
+.news {
+  margin-bottom:100px;
+}
+
+.news h3 {
+  margin-bottom:0;
+}
+
+.news h3 a {
+  font-size: 26px;
+  color: #104d8c;
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-weight: 400;
+}
+
 /*
  Sharing Styles
 */
