@@ -137,7 +137,6 @@ text-align: left;
 background-color: transparent;
 border: none;
 border-bottom: 1px solid #fff;
-color: #f1c40f;
 border-radius: 0px;
 font-size: 16px;
 display: inline;
@@ -444,6 +443,10 @@ ul.triangles {
  Sidebar
 */
 
+.sidebar {
+  padding-top:20px;
+}
+
 .sidebar-radio {
   margin-left: 5px;
 }
@@ -456,6 +459,22 @@ ul.triangles {
 .sidebar-radio input[type=radio], input.radio {
   float:left;
   margin: 2px 0 0 2px;
+}
+
+.sidebar h4 {
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.sidebar ul {
+  font-size:14px;
+  font-weight:500;
+}
+
+.sidebar form .form-group {
+  margin: 0;
 }
 
 /*

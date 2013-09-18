@@ -142,7 +142,7 @@
 <ul class="signatory-category" data-category="individuals"><li>Marvin Ammori</li><li>Jacob Appelbaum</li><li>John Bambenek</li><li>John Perry Barlow</li><li>Tim Berners-Lee</li><li>Britt Blaser</li><li>Geoff Brigham</li><li>Gabriella Coleman</li><li>John Cusack</li><li>Anjali Dalal</li><li>Anil Dash</li><li>Kimya Dawson</li><li>Cory Doctorow</li><li>Daniel Ellsberg</li><li>Sue Gardner</li><li>Rebecca Gates</li><li>Dan Gillmor</li><li>John Gilmore</li><li>Ben Huh</li><li>David Isenberg</li><li>Xeni Jardin</li><li>Birgitta Jónsdóttir</li><li>Sina Khanifar</li><li>Derek Khanna</li><li>Allison Kilkenny</li><li>Jamie Kilstein</li><li>Brian Knappenberger</li><li>Evangeline Lilly</li><li>Amber Lyon</li><li>Rebecca Mackinnon</li><li>T.C. McCarthy</li><li>David Moore</li><li>Alexis Ohanian</li><li>Eli Pariser</li><li>Laura Poitras</li><li>Andrew Rasiej</li><li>Naval Ravikant</li><li>Mark Ruffalo</li><li>Rebecca Solnit</li><li>Robert Swartz</li><li>Zephyr Teachout</li><li>Chad Stokes Urmston</li><li>Ai Weiwei</li><li>Wil Wheaton</li></ul>
 
           </div>
-          <div class="col-xs-12 col-sm-4 col-md-4">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1">
             <div class="sharecenter">
     <a href="https://twitter.com/home?status=On Sunday (8/4), thousands are rallying against unconstitutional surveillance for %231984Day. I'll be one of them: http://1984day.com" count="0" target="_blank" id="tweet-box" class="twitter-button social-count">
       <div id="stwit"></div>
@@ -170,39 +170,32 @@
   <li>Live Music.</li>
  </ul>
  <h4>SIGN UP NOW:</h4>
+
  <form class="mcsignup form-horizontal" role="form" style="margin-top: 15px;">
-    <div class="form-group">
-      <label for="email2" class="col-lg-2  ">EMAIL*:</label>
-      <div class="col-lg-7 nopad">
-        <input type="email" id="email2" name="email" class="flatinput email-field">
-      </div>
+    <div class="form-group nopad">
+      <label for="email2" >EMAIL*:</label>
+      <input type="email" id="email2" name="email" class="flatinput email-field sidebar-email-input">
     </div>
-    <div class="form-group">
-      <label for="name2" class="col-lg-2  ">NAME:</label>
-      <div class="col-lg-7 nopad">
-        <input type="text" id="name2"class="flatinput" name="name">
-      </div>
+    <div class="form-group nopad" style="display:none">
+      <label for="name2" >NAME:</label>
+      <input type="text" id="name2"class="flatinput" name="name">
     </div>
-    <div class="form-group">
-      <label for="inputPassword1" class="col-lg-2 ">PHONE:</label>
-      <div class="col-lg-7 nopad">
-        <input type="text" id="phone2" class="flatinput" name="phone">
-      </div>
+    <div class="form-group nopad" style="display:none">
+      <label for="inputPassword1" >PHONE:</label>
+      <input type="text" id="phone2" class="flatinput" name="phone">
     </div>
-    <div class="form-group">
-      <label for="forZip" class="col-lg-2  ">ZIP:</label>
-      <div class="col-lg-7 nopad">
-        <input type="text" id="forZip" class="flatinput" name="zipcode">
-      </div>
+    <div class="form-group nopad" style="display:none">
+      <label for="forZip" >ZIP:</label>
+      <input type="text" id="forZip" class="flatinput" name="zipcode">
     </div>
-    <div class="form-group">
-      <div class="col-lg-6">
-        <button type="submit" class="btn btn-danger btn-lg validate-submit">SIGN UP TO ATTEND</button>
-      </div>
+    <div class="form-group nopad">
+      <button type="submit" class="btn btn-danger btn-lg validate-submit">SIGN UP TO ATTEND</button>
     </div>
     <div class="status1">&#160;</div>
   </form>
 </div>
+
+
 
           </div>
         </div>
@@ -242,6 +235,10 @@
           // I only have one form on the page but you can be more specific if need be.
           $('.hero-email-input').on('focus', function (){ 
             $('.jumbotron .form-group').slideDown(550);
+          })
+
+          $('.sidebar-email-input').on('focus', function (){ 
+            $('.sidebar .form-group').slideDown(550);
           })
 
           $('.mcsignup').on('submit', function(ev){
