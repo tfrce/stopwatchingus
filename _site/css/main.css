@@ -404,7 +404,12 @@ ul.triangles {
 */
 
 .logos a {
+  padding:0;
+  min-height:65px;
 }
+
+.logos a img { }
+
 /*
  Sidebar
 */
