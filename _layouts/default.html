@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-
+      {% if page.blank != "true" %}
       <div class="jumbotron default">
         <div class="container">
           <div class="col-lg-10 col-lg-offset-1">
@@ -87,9 +87,12 @@
           </div>
         </div>
       </div>
-
+      {% endif %}
       <div class="container content">
         <div class="row">
+
+          {% if page.blank != "true" %}
+
           <div class="col-xs-12 col-sm-8 col-md-8">
             {{content}}
           </div>
@@ -98,6 +101,16 @@
             {% include share.html %}
             {% include sidebar.html %}
           </div>
+
+          {% else %}
+
+          <div class="col-xs-12 col-sm-8 col-md-8">
+            {{content}}
+          </div>
+
+          {% endif %}
+
+
         </div>
       </div>
 
