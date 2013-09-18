@@ -191,10 +191,10 @@
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="sharecenter">
-<div class='sp_614 sp_tw_small social-count' count="0"></div>
-<div class='sp_615 sp_fb_small social-count' count="0"></div>
+<div data-network="twitter" class='sp_614 sp_tw_small social-count' count="0"></div>
+<div data-network="facebook" class='sp_615 sp_fb_small social-count' count="0"></div>
 
-    <a count="0" href="https://plus.google.com/share?url=http://1984day.com" id="gplus" target="_blank"  class="social-count google-button"> 
+    <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=http://1984day.com" id="gplus" target="_blank"  class="social-count google-button"> 
       <div id="sgplus" class="icon"></div>
     </a>
 <div class='sp_616 sp_em_small ' count="0"></div>
@@ -294,6 +294,19 @@
           return o;
       };
       $(document).ready( function () {
+         $.ajax('http://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
+            success: function (res, err) {
+              $.each(res, function(network, value){
+                var count = value;
+                if(count / 10000 > 1) {
+                  count = Math.ceil(count/1000) + 'k'
+                } 
+                $('[data-network="'+network+'"]').attr('count', count);
+              })      
+            }
+          })
+
+
           // I only have one form on the page but you can be more specific if need be.
           $('.hero-email-input').on('focus', function (){ 
             $('.jumbotron .form-group').slideDown(550);
