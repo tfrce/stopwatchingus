@@ -529,6 +529,14 @@ ul.triangles {
 
 .sidebar form .form-group {
   margin: 0;
+  overflow:hidden;
+}
+
+.sidebar form input {
+  width: 100%;
+  float: right;
+  margin: 0 -60px 0 auto;
+
 }
 
 /*
