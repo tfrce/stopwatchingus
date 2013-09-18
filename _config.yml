@@ -1,3 +1,4 @@
-name: Your New Jekyll Site
+name: StopWatching.us
 markdown: redcarpet
 pygments: true
+permalink: /:title
