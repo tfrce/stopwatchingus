@@ -164,11 +164,13 @@ font-weight:200;
   line-height:34px;
 }
 
-.jumbotron button {
+.jumbotron button, .sidebar button {
   margin-top:20px;
   font-family: "bebas-neue", sans-serif;
   -webkit-font-smoothing:antialiased;
   font-size:24px;
+  width: 100%;
+  max-width:400px;
 }
 
 .flatinput:focus {
@@ -244,7 +246,7 @@ hr {
  Sharing Styles
 */
 .sharecenter {
-  margin: 30px 0;
+  margin: 50px 0 0 0;
   height: 62px;
 }
 .social-count {
@@ -497,6 +499,10 @@ ul.triangles {
  Sidebar
 */
 
+.sidecontainer {
+  margin-top:15px;
+}
+
 .sidebar {
   padding-top:20px;
 }
@@ -505,9 +511,15 @@ ul.triangles {
   margin-left: 5px;
 }
 
-.sidebar-radio label {
+
+.sidebar label {
   float:left;
-  padding: 2px 1em 0 0;
+  padding: 2px 0 0 0;
+  font-size:20px;
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
+  font-weight:normal;
+  float:left;
 }
 
 .sidebar-radio input[type=radio], input.radio {
@@ -515,11 +527,12 @@ ul.triangles {
   margin: 2px 0 0 2px;
 }
 
-.sidebar h4 {
+.sidebar h4, h4.sharetitle {
   font-family: "bebas-neue", sans-serif;
   -webkit-font-smoothing:antialiased;
   font-size: 30px;
   margin-bottom: 0;
+  margin-top:20px;
 }
 
 .sidebar ul {
@@ -535,7 +548,8 @@ ul.triangles {
 .sidebar form input {
   width: 100%;
   float: right;
-  margin: 0 -60px 0 auto;
+  margin: 0 -65px 0 auto;
+  padding-top: 4px;
 
 }
 
