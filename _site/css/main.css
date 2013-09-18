@@ -588,3 +588,8 @@ width: 100%;
   width: 300px;
   margin-left: 40px;
 }
+
+.post,
+#disqus_thread {
+  margin-bottom: 40px;
+}
