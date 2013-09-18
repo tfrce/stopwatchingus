@@ -21,7 +21,7 @@
     </head>
     <body>
       <!-- Static navbar -->
-      <div class="navbar navbar-default navbar-static-top col-lg-10 col-lg-2 col-lg-offset-1">
+      <div class="navbar navbar-default navbar-static-top">
         <div class="container">
           <div class="container">
             <div class="navbar-header">
@@ -44,7 +44,7 @@
           </div>
         </div>
       </div>
-      {% if page.blank != "true" %}
+      {% if page.blank != true %}
       <div class="jumbotron default">
         <div class="container">
           <div class="col-lg-10 col-lg-offset-1">
@@ -88,10 +88,12 @@
         </div>
       </div>
       {% endif %}
+
+
       <div class="container content">
         <div class="row">
 
-          {% if page.blank != "true" %}
+          {% if page.blank != true %}
 
           <div class="col-xs-12 col-sm-8 col-md-8">
             {{content}}
@@ -104,12 +106,11 @@
 
           {% else %}
 
-          <div class="col-xs-12 col-sm-8 col-md-8">
+          <div class="col-md-12">
             {{content}}
           </div>
 
           {% endif %}
-
 
         </div>
       </div>
@@ -218,6 +219,16 @@
       });
 
       </script>
+
+      {% if page.blank == true %}
+      <script>
+        // $( document ).ready(function() {
+        //   $('iframe').contents().find('body').css({"min-height": "100", "overflow" : "hidden"});
+        //   setInterval( "$('iframe').height($('iframe').contents().find('body').height() + 20)", 1000 );
+        // });
+      </script>
+      {% endif %}
+
       <script src="/js/bootstrap.min.js"></script>
       <!-- Piwik -->
       <script type="text/javascript">

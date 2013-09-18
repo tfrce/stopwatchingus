@@ -41,14 +41,14 @@ p {
 
 .navbar-static-top {
     border-width: 0px 0px 2px;
+  border-bottom: 2px solid;
+  border-color: rgb(254, 78, 56);
 }
 .navbar-right {
 	padding-top: 20px;
 }
 
 .jumbotron{
-  border-top: 2px solid;
-  border-color: rgb(254, 78, 56);
   padding-top: 50px;
   background: transparent url(../img/banner-crowd.jpg) 0 center;
   color: rgb(255, 255, 255);
@@ -482,6 +482,7 @@ ul.triangles {
 .footer {
   background: #d8d8d8;
   padding: 40px;
+  height: 300px;
 }
 
 .fade {
