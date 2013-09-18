@@ -158,6 +158,7 @@
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
             $('.status1', form).text('Checking email...')
+            $('button', form).text('SIGNING UP...')
             validateEmail(data.email, {
               success: function () {
                 $('.status1', form).empty();
@@ -166,14 +167,18 @@
                   data: data,
                   type: 'POST',
                   success: function () {
-                    $('.signupform-container').empty();
-                    $('.signupform-container').text('Thanks for your support!');
-
+                    $(form).empty();
+                    $(form).text('Thanks for your support, redirecting...');
+                    setTimeout(function () {
+                      window.location = "http://shpg.org/89/604";
+                    }, 500);
                   }
                 })
               }, 
               error: function () {
                 $('.status1', form).text('Email address is invalid');
+                $('button', form).text('SIGN UP TO ATTEND')
+
               }
             })
             return false;
@@ -201,5 +206,22 @@
 
       </script>
       <script src="/js/bootstrap.min.js"></script>
+      <!-- Piwik -->
+      <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+        _paq.push(["setCookieDomain", "*.stopwatching.us"]);
+        _paq.push(["trackPageView"]);
+        _paq.push(["enableLinkTracking"]);
+
+        (function() {
+          var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/piwik/";
+          _paq.push(["setTrackerUrl", u+"piwik.php"]);
+          _paq.push(["setSiteId", "3"]);
+          var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+          g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <!-- End Piwik Code -->
     </body>
 </html>
