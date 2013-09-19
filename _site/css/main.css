@@ -582,3 +582,14 @@ width: 100%;
 #disqus_thread {
   margin-bottom: 40px;
 }
+.navbar-default .navbar-toggle {
+  margin-top:18px;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+  .navbar-brand img {width: 200px !important;}
+  .jumbotron.default h2 {font-size: 30px;}
+  .jumbotron.default h1 {font-size: 37px;}
+  .jumbotron .flatinput {width: 210px;}
+}
