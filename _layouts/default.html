@@ -141,7 +141,7 @@
           return o;
       };
       $(document).ready( function () {
-         $.ajax('http://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
+         $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
             success: function (res, err) {
               $.each(res, function(network, value){
                 var count = value;
@@ -172,7 +172,7 @@
               success: function () {
                 $('.status1', form).empty();
                 $.ajax({
-                  url: 'http://skipchimp.herokuapp.com/subscribe',
+                  url: 'https://skipchimp.herokuapp.com/subscribe',
                   data: data,
                   type: 'POST',
                   success: function () {
