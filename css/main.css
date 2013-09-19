@@ -523,6 +523,15 @@ ul.triangles {
   overflow:hidden;
 }
 
+.form-group .cantattend {
+  font-size:15px;
+}
+
+.form-group .cantattend a {
+  color: #e54b3d;
+  font-weight: bold;
+}
+
 .sidebar form input {
   width: 100%;
   float: right;
