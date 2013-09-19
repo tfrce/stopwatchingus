@@ -76,7 +76,7 @@
                 <div class="form-group">
                     <button type="submit" class="col-lg-2  btn btn-danger btn-lg signup validate-submit">SIGN UP TO ATTEND</button>
                     <div class="status1" style="height: 95px;">&#160;</div>
-                    <div class="cantattend">Can't attend? <a href="http://igg.me/at/stopwatchingus">Support our Indiegogo campaign</a></div>
+                    <div class="cantattend">Can't attend? <a target="_blank" href="http://igg.me/at/stopwatchingus">Support our Indiegogo campaign</a></div>
                 </div>
               </form>
             </div>
@@ -202,7 +202,7 @@
           return o;
       };
       $(document).ready( function () {
-         $.ajax('http://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
+         $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
             success: function (res, err) {
               $.each(res, function(network, value){
                 var count = value;
@@ -233,7 +233,7 @@
               success: function () {
                 $('.status1', form).empty();
                 $.ajax({
-                  url: 'http://skipchimp.herokuapp.com/subscribe',
+                  url: 'https://skipchimp.herokuapp.com/subscribe',
                   data: data,
                   type: 'POST',
                   success: function () {
@@ -280,21 +280,19 @@
 
       <script src="/js/bootstrap.min.js"></script>
       <!-- Piwik -->
-      <script type="text/javascript">
-        var _paq = _paq || [];
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setCookieDomain", "*.stopwatching.us"]);
-        _paq.push(["trackPageView"]);
-        _paq.push(["enableLinkTracking"]);
+        <script type="text/javascript">
+          var _paq = _paq || [];
+          _paq.push(["trackPageView"]);
+          _paq.push(["enableLinkTracking"]);
 
-        (function() {
-          var u=(("https:" == document.location.protocol) ? "https" : "http") + "://analytics.taskforce.is/piwik/";
-          _paq.push(["setTrackerUrl", u+"piwik.php"]);
-          _paq.push(["setSiteId", "3"]);
-          var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
-          g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-        })();
-      </script>
-      <!-- End Piwik Code -->
+          (function() {
+            var u=(("https:" == document.location.protocol) ? "https" : "http") + "://piwik.stopwatching.us/";
+            _paq.push(["setTrackerUrl", u+"piwik.php"]);
+            _paq.push(["setSiteId", "1"]);
+            var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+            g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+          })();
+        </script>
+        <!-- End Piwik Code -->
     </body>
 </html>
