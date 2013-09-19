@@ -256,43 +256,13 @@ hr {
 }
 .social-count {
     position: relative;
-    display: inline;
+    float: left;
+    display: block;
 }
+
 
 
 .social-count:after {
-    background: #efefef;
-    border: 1px solid #ccc;
-    border-radius: 1px;
-    top: -33px;
-    color: #444;
-    content: attr(count);
-    display: block;
-    left: -58px;
-
-    width: 53px;
-    padding: 5px;
-    text-align: center;
-    position: absolute;
-    text-shadow: 0 1px 0 #000;
-    white-space: nowrap;
-    z-index: 98;
-}
-
-.social-count:before {
-    border: solid;
-    border: 1px solid #ccc;
-    border-color: #111 transparent;
-    border-color: #ccc transparent;
-    border-width: .4em .4em 0 .4em;
-    top: -2px;
-    content: "";
-    display: block;
-    left: -36px;
-    position: absolute;
-    z-index: 99;
-}
-.google-button.social-count:after {
     background: #efefef;
     border: 1px solid #ccc;
     border-radius: 1px;
@@ -311,7 +281,7 @@ hr {
     z-index: 98;
 }
 
-.google-button.social-count:before {
+.social-count:before {
     border: solid;
     border: 1px solid #ccc;
     border-color: #111 transparent;
@@ -327,10 +297,11 @@ hr {
 .sharecenter a {
 
     float: left !important;
-    margin:4px !important;
     width:54px !important;
-    margin:4px !important;
     height:54px !important;
+}
+[data-network] {
+  margin-right: 12px;
 }
 body .sharecenter div.icon {
     float: left !important;
