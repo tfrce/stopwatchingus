@@ -215,7 +215,7 @@ About Multimedia Project</li><li>Libertarian Party</li><li>Liberty Coalition</li
           return o;
       };
       $(document).ready( function () {
-         $.ajax('https://social.stopwatching.us/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
+         $.ajax('http://social.stopwatching.us/?networks=facebook,twitter,googleplus&url=https://optin.stopwatching.us/', {
             success: function (res, err) {
               $.each(res, function(network, value){
                 var count = value;
