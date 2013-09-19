@@ -302,6 +302,7 @@ hr {
 }
 [data-network] {
   margin-right: 12px;
+
 }
 body .sharecenter div.icon {
     float: left !important;
@@ -587,9 +588,16 @@ width: 100%;
 }
 
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px), only screen and (max-width: 480px)  {
   .navbar-brand img {width: 200px !important;}
   .jumbotron.default h2 {font-size: 30px;}
   .jumbotron.default h1 {font-size: 37px;}
-  .jumbotron .flatinput {width: 210px;}
+  .jumbotron .flatinput {width: 194px;}
+}
+
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  [data-network] {
+    margin-right: 0;
+  }
 }
