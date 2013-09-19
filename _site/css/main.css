@@ -500,6 +500,8 @@ ul.triangles {
   float:left;
 }
 
+.centermargins {margin: 0 auto;}
+
 .sidebar-radio input[type=radio], input.radio {
   float:left;
   margin: 2px 0 0 2px;
