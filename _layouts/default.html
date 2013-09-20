@@ -1,17 +1,27 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-      <meta charset="utf-8"> 
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
       <title>{% if page.title %} {{ page.title }} | {% endif %} Stop Watching Us</title> 
       <meta name="description" content="On October 26th, people from all walks of life will descend on Washington, DC to call for an end to mass NSA surveillance. Will you be there?"> 
       <meta name="viewport" content="width=device-width"> 
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0/css/bootstrap.min.css"> 
       <link rel="stylesheet" href="/css/main.css"> 
+=======
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{% if page.title %} {{ page.title }} | {% endif %} Stop Watching Us</title>
+      <meta name="description" content="On October 26th, people from all walks of life will descend on Washington, DC to call for an end to mass NSA surveillance. Will you be there?">
+      <meta name="viewport" content="width=device-width">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+      <link rel="stylesheet" href="/css/main.css">
+>>>>>>> 49ad946edf6ded005d5f567d643c528dca9de069
       <script type="text/javascript" src="//use.typekit.net/cdj3zbf.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-      <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+      <!--[if lt IE 9]> <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
       <script src="//c.shpg.org/89/sp.js"></script>
 
 
@@ -46,7 +56,7 @@
               </button>
               <a class="navbar-brand" href="/"><img src="/img/logo-header.png"></a>
             </div>
-            
+
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="/">HOME</a></li>
@@ -54,7 +64,7 @@
                 <li><a href="https://optin.stopwatching.us">PETITION</a></li>
                 <li><a href="mailto:organizers@stopwatching.us">CONTACT</a></li>
               </ul>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -62,7 +72,7 @@
       <div class="jumbotron default">
         <div class="container">
           <div class="col-lg-10 col-lg-offset-1">
-            <h2>This October 26th, 2013 in Washington, D.C</h2>
+            <h2>October 26th, 2013 in Washington, D.C.</h2>
             <h1>A Rally Against Mass Surveillance</h1>
           </div>
 
@@ -72,7 +82,7 @@
                 <label for="email" class="col-lg-2 control-label nopad">EMAIL:</label>
                 <div class="col-lg-8 nopad">
                   <input type="text" id="email" class="flatinput email-field hero-email-input" name="email">
-                </div> 
+                </div>
               </div>
               <div class="form-group"  style="display: none;">
                 <label for="name" class="col-lg-2 control-label nopad">NAME:</label>
@@ -90,7 +100,7 @@
                 <label for="zipcode" class="col-lg-2 control-label nopad">ZIP:</label>
                 <div class="col-lg-8 nopad">
                   <input type="text" id="zipcode" class="flatinput" name="zipcode">
-                </div> 
+                </div>
               </div>
                 <div class="form-group">
                     <button type="submit" class="col-lg-2  btn btn-danger btn-lg signup validate-submit">SIGN UP TO ATTEND</button>
@@ -135,7 +145,7 @@
               <img src="/img/cc.png" class="pull-right">
               <br/><br/>
               <p>This work is licensed under a Creative Commons Attribution 3.0 Unported License.<br /><a href="privacy.html" style="float: right;">Privacy Policy</a></p>
-              
+
             </span>
           </div>
         </div>
@@ -164,20 +174,20 @@
                 var count = value;
                 if(count / 10000 > 1) {
                   count = Math.ceil(count/1000) + 'k'
-                } 
+                }
                 $('[data-network="'+network+'"]').attr('count', count);
-              })      
+              })
             },
             dataType: 'jsonp'
           })
 
 
           // I only have one form on the page but you can be more specific if need be.
-          $('.hero-email-input').on('focus', function (){ 
+          $('.hero-email-input').on('focus', function (){
             $('.jumbotron .form-group').slideDown(550);
           })
 
-          $('.sidebar-email-input').on('focus', function (){ 
+          $('.sidebar-email-input').on('focus', function (){
             $('.sidebar .form-group').slideDown(550);
           })
 
@@ -201,7 +211,7 @@
                     }, 500);
                   }
                 })
-              }, 
+              },
               error: function () {
                 $('.status1', form).text('Email address is invalid');
                 $('button', form).text('SIGN UP TO ATTEND')
