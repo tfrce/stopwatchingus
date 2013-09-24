@@ -126,7 +126,9 @@
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 col-lg-offset-1">
             <div class="sharecenter">
-<div data-network="twitter" class='sp_614 sp_tw_small social-count' count="0"></div>
+
+<a data-network="twitter" href="https://twitter.com/home?status=This is the most effective thing you can do to fight back against the NSA. You in? https://rally.stopwatching.us #StopWatchingUs" count="0" target="_blank" id="tweet-box" class="sp_tw_small social-count"><div id="stwit" class="icon"></div></a>
+
 <div data-network="facebook" class='sp_615 sp_fb_small social-count' count="0"></div>
 
     <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=https://rally.stopwatching.us" id="gplus" target="_blank"  class="social-count google-button"> 
@@ -223,7 +225,19 @@
           });
           return o;
       };
+
+      /*function openFacebook(){var e="https://www.facebook.com/sharer/sharer.php?u=http://1984day.com";window.open(e,"Share on Facebook","width=500,height=500");return false}
+      function openGplus(){var e="https://plus.google.com/share?url=http://1984day.com/";window.open(e,"Share on Google Plus","width=500,height=436");return false}*/
+      function openTwitter(){
+        var t="https://twitter.com/home?status=This is the most effective thing you can do to fight back against the NSA. You in? https://rally.stopwatching.us #StopWatchingUs&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
+          return false}
+
       $(document).ready( function () {
+
+        /*$("#facebook").attr("onclick","openFacebook(); return false;");
+        $("#gplus").attr("onclick","openGplus(); return false;");*/
+        $("#tweet-box").attr("onclick","openTwitter(); return false;")
+
          $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://rally.stopwatching.us/', {
             success: function (res, err) {
               $.each(res, function(network, value){
