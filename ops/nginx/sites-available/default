@@ -44,7 +44,7 @@ server {
 
 	# Only for nginx-naxsi used with nginx-naxsi-ui : process denied requests
 	#location /RequestDenied {
-	#	proxy_pass http://127.0.0.1:8080;
+	#	proxy_pass http://127.0.0.1:8080;    
 	#}
 
 	#error_page 404 /404.html;
@@ -61,7 +61,7 @@ server {
 	location ~ \.php$ {
 		fastcgi_split_path_info ^(.+\.php)(/.+)$;
 		# NOTE: You should have "cgi.fix_pathinfo = 0;" in php.ini
-
+	
 		# With php5-cgi alone:
 	#	fastcgi_pass 127.0.0.1:9000;
 		# With php5-fpm:
