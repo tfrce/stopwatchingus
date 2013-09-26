@@ -198,6 +198,18 @@ hr {
   padding: 0;
 }
 
+.content.sidebarpage {
+  margin-top:30px;
+}
+
+.content.sidebarpage li {
+  margin-bottom:8px;
+}
+
+.content.sidebarpage h3 {
+  font-size:20px;
+}
+
 .content h2 {
   font-size: 36px;
   border-bottom: 1px red solid;
