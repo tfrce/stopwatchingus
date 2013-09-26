@@ -25,7 +25,7 @@ server {
 }
 
 server {
-	listen 127.0.0.1:8000;
+	listen *:8000;
 
         server_name_in_redirect off;
 	root /home/rritf/piwik/;
@@ -33,8 +33,8 @@ server {
 
 	# Make site accessible from http://localhost/
 	server_name piwik.stopwatching.us;
-        access_log /var/log/nginx/$http_host-access.log;
-        error_log /var/log/nginx/$http_host-error.log;
+        access_log /var/log/nginx/piwik-access.log;
+        error_log /var/log/nginx/piwik_host-error.log;
 
 	location / {
 		# First attempt to serve request as file, then

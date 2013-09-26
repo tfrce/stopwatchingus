@@ -25,7 +25,11 @@ server {
 }
 
 server {
-	listen 127.0.0.1:8000;
+	listen *:8000 default_server;
+
+        if ( $http_x_forwarded_proto = 'http' ) { # careful, http://wiki.nginx.org/IfIsEvil
+          rewrite     ^   https://$http_host$request_uri? permanent;
+        }
 
         server_name_in_redirect off;
 	root /home/rritf/src/stopwatchingus/_site;
@@ -33,7 +37,7 @@ server {
 
 	# Make site accessible from http://localhost/
 	server_name dev.stopwatching.us rally.stopwatching.us;
-        access_log /var/log/nginx/stopwatching-access.log;
+        access_log /var/log/nginx/stopwatching-access.log combined_extra;
         error_log /var/log/nginx/stopwatching-error.log;
 
 	location / {
