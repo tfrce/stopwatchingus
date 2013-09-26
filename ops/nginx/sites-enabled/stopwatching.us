@@ -30,6 +30,8 @@ server {
         if ( $http_x_forwarded_proto = 'http' ) { # careful, http://wiki.nginx.org/IfIsEvil
           rewrite     ^   https://$http_host$request_uri? permanent;
         }
+        
+        expires +10m;
 
         server_name_in_redirect off;
 	root /home/rritf/src/stopwatchingus/_site;
