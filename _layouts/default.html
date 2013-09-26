@@ -52,6 +52,7 @@
                 <li><a href="/">HOME</a></li>
                 <li><a href="news.html">NEWS</a></li>
                 <li><a href="volunteers.html">VOLUNTEERS</a></li>
+                <li><a href="lobbyday.html">LOBBY DAY</a></li>
                 <li><a href="https://optin.stopwatching.us">PETITION</a></li>
                 <li><a href="mailto:organizers@stopwatching.us">CONTACT</a></li>
               </ul>
@@ -216,7 +217,28 @@
             })
             return false;
           });
-
+          $('.lobby-form').on('submit', function(ev){
+            var form = $(ev.currentTarget);
+            var data = form.serializeObject();
+            console.log(data);
+            //$('.status1', form).text('Checking email...')
+            //$('button', form).text('SIGNING UP...')
+            //$('.status1', form).empty();
+            $.ajax({
+              url: 'https://skipchimp.herokuapp.com/subscribe',
+              data: data,
+              type: 'POST',
+              success: function () {
+                $(form).empty();
+                $(form).text('Thanks for your support, redirecting...');
+                setTimeout(function () {
+                  alert('success');
+                  //window.location = "/share.html";
+                }, 500);
+              }
+            })
+            return false;
+          });
           $('.mcsignup').on('submit', function(ev){
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
