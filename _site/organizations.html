@@ -273,6 +273,8 @@ About Multimedia Project</li><li>Libertarian Party</li><li>Liberty Coalition</li
             $('.sidebar .form-group').slideDown(550);
           })
 
+
+
           $('.volunteer-form').on('submit', function(ev){
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
@@ -286,15 +288,37 @@ About Multimedia Project</li><li>Libertarian Party</li><li>Liberty Coalition</li
               type: 'POST',
               success: function () {
                 $(form).empty();
-                $(form).text('Thanks for your support, redirecting...');
+                $(form).html('Thanks for your support.');
                 setTimeout(function () {
-                  alert('success');
                   //window.location = "/share.html";
                 }, 500);
               }
             })
             return false;
           });
+
+          $('.notindc-form').on('submit', function(ev){
+            var form = $(ev.currentTarget);
+            var data = form.serializeObject();
+            console.log(data);
+            //$('.status1', form).text('Checking email...')
+            //$('button', form).text('SIGNING UP...')
+            //$('.status1', form).empty();
+            $.ajax({
+              url: 'https://skipchimp.herokuapp.com/subscribe',
+              data: data,
+              type: 'POST',
+              success: function () {
+                $(form).empty();
+                $(form).html('<strong>Thanks for your support.</strong>');
+                setTimeout(function () {
+                  //window.location = "/share.html";
+                }, 500);
+              }
+            })
+            return false;
+          });
+
           $('.lobby-form').on('submit', function(ev){
             var form = $(ev.currentTarget);
             var data = form.serializeObject();
@@ -308,9 +332,8 @@ About Multimedia Project</li><li>Libertarian Party</li><li>Liberty Coalition</li
               type: 'POST',
               success: function () {
                 $(form).empty();
-                $(form).text('Thanks for your support, redirecting...');
+                $(form).html('Thanks for your support.');
                 setTimeout(function () {
-                  alert('success');
                   //window.location = "/share.html";
                 }, 500);
               }
