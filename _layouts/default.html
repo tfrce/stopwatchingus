@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      {% if page.blank != true %}
+      {% if page.blank != true %}{% if page.sidebar != true %}
       <div class="jumbotron default">
         <div class="container">
           <div class="col-lg-10 col-lg-offset-1">
@@ -104,10 +104,10 @@
           </div>
         </div>
       </div>
-      {% endif %}
+      {% endif %}{% endif %}
 
 
-      <div class="container content">
+      <div class="container content {% if page.sidebar == true %} sidebarpage {% endif %}">
         <div class="row">
 
           {% if page.blank != true %}
