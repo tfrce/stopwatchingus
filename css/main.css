@@ -21,8 +21,12 @@ p {
 
 .navbar-default .navbar-nav>li>a {
   color: #211f20;
-
 }
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgb(254, 78, 56);
+}
+
 .navbar {
   font-size: 20px;
   background-image: none;
@@ -608,6 +612,13 @@ width: 100%;
   .jumbotron .flatinput {width: 194px;}
 }
 
+@media only screen and (max-width: 991px)  {
+  .navbar-brand img {width:230px;}
+  .navbar-brand {padding-top: 18px;}
+  .navbar-default .navbar-nav>li>a {
+    padding: 10px 8px;
+  }
+}
 
 @media screen and (max-width: 991px) and (min-width: 768px) {
   [data-network] {
