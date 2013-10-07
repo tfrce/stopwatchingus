@@ -622,6 +622,16 @@ FAQ
   margin: 25px 0 8px 0;
 }
 
+.container .faq .resource {
+  min-height: 190px;
+  padding-top:20px;
+}
+
+.container .faq .resource div, .container .faq .resource p {
+text-align:center;
+}
+
+
 
 @media only screen and (max-device-width: 480px), only screen and (max-width: 480px)  {
   .navbar-brand img {width: 200px !important;}
@@ -630,11 +640,40 @@ FAQ
   .jumbotron .flatinput {width: 194px;}
 }
 
-@media only screen and (max-width: 991px)  {
+@media only screen and (max-width: 991px) and (min-width:768px) {
   .navbar-brand img {width:230px;}
-  .navbar-brand {padding-top: 18px;}
+  .navbar-brand {
+    padding-top: 18px;
+    width: 62px;
+    overflow: hidden;
+  }
+  .navbar>.container .navbar-brand {
+    margin-left:-5px;
+  }
   .navbar-default .navbar-nav>li>a {
     padding: 10px 8px;
+  }
+  .navbar-right {
+    padding-top:16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar>.container .navbar-brand {
+    margin-left:10px;
+  }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+  .navbar-default .navbar-toggle {
+    margin-top:29px;
+  }
+}
+
+@media only screen and (max-width: 1199px)  {
+  .navbar-default .navbar-nav>li>a {
+    padding: 15px 9px;
   }
 }
 
