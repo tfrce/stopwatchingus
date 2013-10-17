@@ -7,7 +7,7 @@ categories:
 
 <p style="font-size:19px; font-weight: bold; padding: 15px 0 0px 0">Own a website? We need your help.</p>
 
-Mass surveillance is a threat to the Internet. The NSA's programs threaten our ability to communicate and conduct transactions privately online. This is a critical moment: If we don't convince Congress to make meaningful change Snowden's leaks have the public's attention, we may never have another chance.
+Mass surveillance is a threat to the Internet. The NSA's programs threaten our ability to communicate and conduct transactions privately online. This is a critical moment: If we don't convince Congress to make meaningful change while Snowden's leaks have the public's attention, we may never have another chance.
 
 That's why we, the EFF, ACLU, Free Press, Demand Progress, and dozens of other technology policy advocates have spent the last six weeks planning a rally in DC. 
 
