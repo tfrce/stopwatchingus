@@ -47,7 +47,9 @@ Some details on when the banner is served:
 * Mobile users aren't shown the banner.
 * The script automatically stops serving the banners at 12pm on October 26th (the start time of the rally)
 * If a user closes the banner, it won't be shown to them again for 48 hours.
+* The servers has been load tested, feel free to add the snippet to sites with any amount of traffic.
 
+If you have questions, feel free to <a href="mailto:sina@stopwatching.us" target="_blank">contact the developers</a>.
 
 <h3 style="margin-bottom:15px">Why you, and specifically you, should take part:</h3>
 
