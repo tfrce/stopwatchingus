@@ -29,6 +29,8 @@ All it takes to help is 9 lines of code. Add it to your personal blog or your co
 <![endif]-->
 ```
 
+The code is non-blocking, and we recommend adding it before the closing `</body>` tag.
+
 <h3 style="margin-bottom:15px">What the banner looks like:</h3>
 
 See the default banner live on <a href="http://cdnjs.com" target="_blank">cdnjs</a> (geolcation is disabled).
