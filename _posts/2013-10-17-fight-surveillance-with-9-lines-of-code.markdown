@@ -18,7 +18,7 @@ All it takes to help is 9 lines of code. Add it to your personal blog or your co
 ### The code:
 
 ```
-<!--[if gt IE 8]>
+<!--[if !(lte IE 8)]><!-->
 <script> 
   (function(){
     var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
@@ -26,7 +26,7 @@ All it takes to help is 9 lines of code. Add it to your personal blog or your co
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
   })();
 </script>
-<![endif]-->
+<!--<![endif]-->
 ```
 
 The code is non-blocking, and we recommend adding it before the closing `</body>` tag.
@@ -39,7 +39,7 @@ You can also choose from three different banner designs. Check them out on our <
 
 <h3 style="margin-bottom:15px">Technical implementation:</h3>
 
-Our geolocation service uses multiple load-balanced Rackspace servers, each of which runs a node.js-based IP geolocation service. Rackspace were kind enough to donate hosting for the project. The javascript itself is served via Cloudfront.
+Our geolocation service uses multiple load-balanced Rackspace servers, each of which runs a node.js-based IP geolocation service. Rackspace was kind enough to donate hosting for the project. The javascript itself is served via Cloudfront.
 
 Some details on when the banner is served:
 
@@ -56,4 +56,3 @@ If you have questions, feel free to <a href="mailto:sina@stopwatching.us" target
 Plato said that "the chief penalty [of good men who refuse to lead] is to be governed by someone worse." 
 
 If you, the ones who create the content that's served on the Internet, don't act to defend it, who will?
-
