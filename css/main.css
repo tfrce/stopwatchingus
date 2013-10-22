@@ -199,8 +199,26 @@ font-weight:200;
   max-width:400px;
 }
 
-.sidebar button {
+/* JUMBOTRON UPDATE */
+
+.jumbotron.default.updated {
+  padding-top:0px;
+  background: #1d1d1d;
 }
+
+.jumbotron.default.updated div.blackbar {
+  background: #1d1d1d solid;
+}
+
+.jumbotron.default.updated h2 {
+  font-size: 43px;
+}
+
+.jumbotron.default.updated button.signup {
+   font-size:22px;
+   margin-top:5px;
+}
+
 
 .flatinput:focus {
     outline-width: 0;
