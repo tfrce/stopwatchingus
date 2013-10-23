@@ -267,9 +267,14 @@ font-weight:200;
   padding:0;
 }
 
+.blogvideocontainer {
+  padding-left:0;
+  padding-right: 0;
+}
+
 
 @media (min-width: 768px) { 
-  .jumbotron.default.updated .shareclear {
+  .jumbotron.default.updated .shareclear, .blogpost .shareclear {
     height:105px;
   }
 }
@@ -718,6 +723,12 @@ width: 100%;
 }
 .navbar-default .navbar-toggle {
   margin-top:18px;
+}
+
+.meta {
+  font-size: 12px;
+  margin-bottom: 30px;
+  margin-top: -10px;
 }
 
 /*
