@@ -216,8 +216,19 @@ font-weight:200;
 }
 
 .jumbotron.default.updated h2 span {
-  font-size:38px;
+  font-size:35px;
 }
+
+.jumbotron.default.updated h2 a {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+
+.jumbotron.default.updated h2 a:hover {
+  color: #dddddd;
+}
+
 
 
 .jumbotron.default.updated .video {
