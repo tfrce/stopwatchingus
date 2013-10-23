@@ -213,19 +213,30 @@ font-weight:200;
 
 .jumbotron.default.updated h2 {
   font-size: 55px;
+  margin-top:0px;
+  margin-bottom:5px;
 }
 
-.jumbotron.default.updated h2 span {
+.jumbotron.default.updated h3 {
+  font-family: "bebas-neue", sans-serif;
+  -webkit-font-smoothing:antialiased;
   font-size:35px;
+  margin-top:25px;
+  margin-bottom:5px;
 }
 
-.jumbotron.default.updated h2 a {
+.jumbotron.default.updated h3 a {
   text-decoration: underline;
   color: #ffffff;
 }
 
 
-.jumbotron.default.updated h2 a:hover {
+@media (max-width: 992px) { 
+  .jumbotron.default.updated h3 { font-size:29px;}
+}
+
+
+.jumbotron.default.updated h3 a:hover {
   color: #dddddd;
 }
 
