@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Project Megaphone: <br />Fight Surveillance With 9 Lines of Code"
+title:  "Project Megaphone: Fight Surveillance With 9 Lines of Code"
 date:   2013-10-17 09:00:00
 categories: 
+excerpt: If you own a website, you can help us put a stop to warrantless surveillance.
 ---
 
 <p style="font-size:19px; font-weight: bold; padding: 15px 0 0px 0">Own a website? We need your help.</p>
@@ -14,6 +15,8 @@ That's why we, the EFF, ACLU, Free Press, Demand Progress, and dozens of other t
 <strong>We need to show Congress that passing meaningful legislation is critical.</strong>
 
 All it takes to help is 9 lines of code. Add it to your personal blog or your company's website and our servers handle the rest. Everytime a visitor from cities nearby DC visits the site, we'll show them a banner advertising the rally.
+
+
 
 ### The code:
 
@@ -30,6 +33,14 @@ All it takes to help is 9 lines of code. Add it to your personal blog or your co
 ```
 
 The code is non-blocking, and we recommend adding it before the closing `</body>` tag.
+
+If you'd rather not link to an external javascript file you can also host the javascript file locally on your own servers.
+
+### Wordpress plugin
+
+We've built a WordPress plugin to make implementing the code extra easy on Wordpress sites. Search for 'Project Megaphone Banner' in your WordPress plugins area, download it and activate it, that's it!
+
+And here's a direct link: <a href="http://wordpress.org/plugins/project-megaphone-banner/" target="_blank">http://wordpress.org/plugins/project-megaphone-banner/</a>
 
 <h3 style="margin-bottom:15px">What the banner looks like:</h3>
 
