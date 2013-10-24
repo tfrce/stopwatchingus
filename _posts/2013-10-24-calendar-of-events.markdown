@@ -22,6 +22,13 @@ Follow [@ACLU_Action](http://twitter.com/ACLU_Action) and #StopWatchingUs on Twi
 
 <h3 style="font-size:22px; margin-bottom:15px;">Friday October 25th:</h3>
 
+
+**Smithsonian Symposium: "Inventing the Surveillance Society"**<br />
+Lemelson Center, Smithsonian Museum<br />
+10:15am - 9:30pm; [More Information](http://invention.smithsonian.org/events/surveillance.aspx)<br />
+National Museum of American History<br />
+[1300 Constitution Ave NW](https://maps.google.com/maps?q=1300+constitution+ave+nw+dc&hnear=1300+Constitution+Ave+NW,+Washington,+District+of+Columbia,+20227&t=m&z=16)
+
 **Lobby Day Training**<br />
 StopWatchingUs Coalition<br />
 9:00am - 11:00am; [RSVP](https://rally.stopwatching.us/lobbyday.html)<br />
