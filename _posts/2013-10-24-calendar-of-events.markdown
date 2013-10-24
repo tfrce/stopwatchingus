@@ -41,6 +41,11 @@ Rayburn House Office Building<br />
 [Corners South Capitol St, First St, and C St, SW](https://maps.google.com/maps?q=Rayburn+House+Office+Building,+Washington,+DC&hl=en&ll=38.88674,-77.010105&spn=0.011408,0.022681&sll=38.891506,-77.005111&sspn=0.011407,0.022681&oq=rayburn+office+bui&gl=us&hnear=Rayburn+House+Office+Bldg,+Washington,+District+of+Columbia+20515&t=m&z=16)<br />
 Room 2226
 
+**Projections Around D.C.**<br />
+ACLU Action <br />
+6:00pm - 12:00am<br />
+Follow [@ACLU_Action](http://twitter.com/ACLU_Action) and #StopWatchingUs on Twitter for up-to-minute locations
+
 **Cryptoparty Happy Hour**<br />
 EPIC and Public Citizen<br />
 4:30pm - 7:00pm; [RSVP](http://epic.org/events/cryptoparty/)<br />
