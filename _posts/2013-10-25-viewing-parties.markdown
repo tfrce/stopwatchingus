@@ -26,14 +26,6 @@ Location: ACLU of Kentuck<br />
 Address: 315 Guthrie Street, Louisville, Kentucky 40202<br />
 <a href="https://www.facebook.com/events/455867864531794/">RSVP on Facebook</a>
 
-
-**San Diego, CA**<br />
-Time: 9am to 12pm PT<br />
-Location: Pacific Beach Recreation Center<br />
-Address: 1405 Diamond St., San Diego, California 92109<br />
-<a href="https://www.facebook.com/events/190856811103309/">RSVP on Facebook</a>
-
-
 **San Francisco, CA**<br />
 Time: 9am to 12pm PT<br />
 Location: 2nd floor conference room of the ACLU of Northern California<br />
