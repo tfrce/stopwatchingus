@@ -284,6 +284,23 @@ font-weight:200;
     padding-bottom: 56.25%;
     padding-top: 30px; height: 0; overflow: hidden;
 }
+
+.jumbotron .video-container {
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.jumbotron.updated {
+  background: #333333;
+}
+
+@media (min-width: 992px) { 
+
+  .jumbotron .video-container {
+      margin-top: 105px;
+  }
+
+}
  
 .video-container iframe,
 .video-container object,
