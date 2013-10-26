@@ -102,7 +102,7 @@
 </div>
           <div class="col-xs-12 col-sm-12 col-md-6">
 
-<script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/a5b5e4.js"></script><div class="a5b5e4" data-id="thomasdavis-1382673881" data-columns="1"  data-wl="true" style="height:600px;width:100%;"></div>
+<div class="a5b5e4 tintup" data-columns="1" data-id="thomasdavis-1382673881"   data-wl="true" style="height:600px;width:100%;"></div>
         </div>
         </div>
 
@@ -251,7 +251,9 @@
           return false}
 
       $(document).ready( function () {
-
+        if($(window).width() >= 840){
+            $('.tintup').attr('data-columns', 2);
+        } 
         /*$("#facebook").attr("onclick","openFacebook(); return false;");
         $("#gplus").attr("onclick","openGplus(); return false;");*/
         $("#tweet-box").attr("onclick","openTwitter(); return false;")
@@ -417,6 +419,7 @@
             g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
           })();
         </script>
+        <script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/a5b5e4.js"></script>
         <!-- End Piwik Code -->
     </body>
 </html>
