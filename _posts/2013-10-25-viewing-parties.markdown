@@ -10,7 +10,7 @@ Not able to make it to D.C. on Saturday? Join one of the satellite protests view
 
 Find one and sign up below:
 
-<h3 style="font-size: 18px">Livestream Events</h3>
+<h3 style="font-size: 22px">Livestream Events</h3>
 
 
 **Los Angeles, CA**<br />
@@ -41,7 +41,7 @@ Address: 39 Drumm Street<br />
 <a href="https://www.facebook.com/events/606254929431287/">RSVP on Facebook</a>
 
 
-<h3 style="font-size: 18px">Solidarity Rallies</h3>
+<h3 style="font-size: 22px">Solidarity Rallies</h3>
 
 
 **Austin, TX**<br />
