@@ -74,11 +74,11 @@
 
             <h2 style="margin-top: 20px; font-size:34px;">Rally Against Mass Surveillance Livestream:<br /></h2>
 
-<iframe style="float: left; margin-bottom: 60px;" width="100%" height="392" src="http://www.ustream.tv/embed/16192380?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
+<iframe style="float: left; margin-bottom: 60px;" width="100%" height="392" src="https://www.ustream.tv/embed/16192380?v=3&amp;wmode=direct" scrolling="no" frameborder="0" style="border: 0px none transparent;">    </iframe>
 
 <div class="sharecenter" style="padding-bottom: 20px;">
 
-<a data-network="twitter" href="https://twitter.com/home?status=Livestream of the rally against mass surveillance in Washington DC: https://rally.stopwatching.us&hashtags=stopwatchingus" count="0" target="_blank" id="tweet-box" class="sp_tw_small social-count"><div id="stwit" class="icon"></div></a>
+<a data-network="twitter" href="https://twitter.com/home?status=Livestream%20of%20the%20rally%20against%20mass%20surveillance%20in%20Washington%20DC%3A%20https%3A%2F%2Frally.stopwatching.us%20%23stopwatchingus" count="0" target="_blank" id="tweet-box3" class="sp_tw_small social-count"><div id="stwit" class="icon"></div></a>
 
 <div data-network="facebook" class='sp_1014 sp_fb_small social-count' count="0"></div>
 
@@ -505,6 +505,9 @@
       function openTwitter2(){
         var t="https://twitter.com/home?status=This is the one video everyone needs to see about NSA spying -> https://rally.stopwatching.us&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
           return false}
+      function openTwitter3(){
+        var t="https://twitter.com/home?status=Livestream%20of%20the%20rally%20against%20mass%20surveillance%20in%20Washington%20DC%3A%20https%3A%2F%2Frally.stopwatching.us%20%23stopwatchingus&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
+          return false}
 
       $(document).ready( function () {
         if($(window).width() >= 840){
@@ -514,6 +517,7 @@
         $("#gplus").attr("onclick","openGplus(); return false;");*/
         $("#tweet-box").attr("onclick","openTwitter(); return false;")
         $("#tweet-box2").attr("onclick","openTwitter2(); return false;")
+        $("#tweet-box3").attr("onclick","openTwitter3(); return false;")
 
          $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://rally.stopwatching.us/', {
             success: function (res, err) {
@@ -675,7 +679,7 @@
             g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
           })();
         </script>
-        <script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/a5b5e4.js"></script>
+        <script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/secure/a5b5e4.js"></script>
         <!-- End Piwik Code -->
     </body>
 </html>
