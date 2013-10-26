@@ -44,7 +44,7 @@ Address: 1405 Diamond St., San Diego, California 92109<br />
 <a href="https://www.facebook.com/events/190856811103309/">RSVP on Facebook</a>
 
 
-**In 5 different cities in Germany!**<br />
+**In 8 different cities in Germany!**<br />
 Time: Various<br />
 <a href="https://www.facebook.com/events/333704893440641/">More details on Facebook</a>
 
