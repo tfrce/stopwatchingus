@@ -16,8 +16,8 @@
 
 
     <!-- Facebook OpenGraph tags -->
-    <meta property="og:title" content="This is the most effective thing you can do to fight back against the NSA. You in?" />
-    <meta property="og:description" content="On October 26th, people from all walks of life will descend on Washington, DC to call for an end to mass NSA surveillance. Will you be there?" />
+    <meta property="og:title" content="Stop Watching Us: Rally Against Mass Surveillance" />
+    <meta property="og:description" content="On October 26th, people from all walks of life descended on Washington, DC to call for an end to mass NSA surveillance." />
     <meta property="og:type" content="cause" />
     <meta property="og:url" content="https://rally.stopwatching.us" />
     <meta property="og:image" content="https://rally.stopwatching.us/img/facebook-v4.jpg" />
@@ -83,9 +83,9 @@
 
             <a data-network="twitter" href="https://twitter.com/home?status=Livestream%20of%20the%20rally%20against%20mass%20surveillance%20in%20Washington%20DC%3A%20https%3A%2F%2Frally.stopwatching.us%20%23stopwatchingus" count="0" target="_blank" id="tweet-box3" class="sp_tw_small social-count"><div id="stwit" class="icon"></div></a>
 
-            <div data-network="facebook" class='sp_1014 sp_fb_small social-count' count="0"></div>
+            <a data-network="facebook" href="https://www.facebook.com/share.php?u=https://rally.stopwatching.us" count="0" target="_blank" id="facebook" class="social-count sp_fb_small"><div id="fb" class="icon"></div></a>
 
-                <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=https://rally.stopwatching.us" id="gplus" target="_blank"  class="social-count google-button"> 
+            <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=https://rally.stopwatching.us" id="gplus" target="_blank"  class="social-count google-button"> 
                   <div id="sgplus" class="icon"></div>
                 </a>
 
@@ -127,9 +127,7 @@
                   <a data-network="twitter" href="https://twitter.com/home?status=The one video everyone needs to see about NSA spying -> https://rally.stopwatching.us&hashtags=stopwatchingus" count="0" target="_blank" id="tweet-box2" class="social-count"><div id="stwit" class="icon"></div></a>
                 </div>
 
-                <div class="shareclear">
-                  <div data-network="facebook" class='sp_971 sp_fb_small social-count' count="0"></div>
-                </div>
+                <a data-network="facebook" href="https://www.facebook.com/share.php?u=https://rally.stopwatching.us" count="0" target="_blank" id="facebook" class="social-count sp_fb_small"><div id="fb" class="icon"></div></a>
 
                 <div class="shareclear" style="height:64px; padding-left:1px;">
                   <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=https://rally.stopwatching.us" id="gplus" target="_blank"  class="social-count google-button"> 
@@ -209,12 +207,12 @@
       function openTwitter(){
         var t="https://twitter.com/home?status=Thousands of people gathered on the steps of the capitol to fight back against NSA surveillance -> https://rally.stopwatching.us #StopWatchingUs&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
           return false}
-      function openTwitter2(){
-        var t="https://twitter.com/home?status=This is the one video everyone needs to see about NSA spying -> https://rally.stopwatching.us&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
-          return false}
-      function openTwitter3(){
-        var t="https://twitter.com/home?status=Livestream%20of%20the%20rally%20against%20mass%20surveillance%20in%20Washington%20DC%3A%20https%3A%2F%2Frally.stopwatching.us%20%23stopwatchingus&related=stopwatchingus,sinak,neutralthoughts";window.open(t,"Twitter","width=550,height=420");
-          return false}
+
+    function openFacebook() {
+        var e = "https://www.facebook.com/sharer/sharer.php?u=https://rally.stopwatching.us";
+        window.open(e, "Share on Facebook", "width=500,height=500");
+        return false
+    }
 
       $(document).ready( function () {
         if($(window).width() >= 840){
@@ -225,6 +223,7 @@
         $("#tweet-box").attr("onclick","openTwitter(); return false;")
         $("#tweet-box2").attr("onclick","openTwitter2(); return false;")
         $("#tweet-box3").attr("onclick","openTwitter(); return false;")
+        $("#facebook").attr("onclick", "openFacebook(); return false;");
 
          $.ajax('https://d28jjwuneuxo3n.cloudfront.net/?networks=facebook,twitter,googleplus&url=https://rally.stopwatching.us/', {
             success: function (res, err) {

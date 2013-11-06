@@ -492,14 +492,14 @@ body .sharecenter div.icon {
     transition:0.2s ease-out all;
     opacity:0.8;
 } 
-body .sp_em_small a {
+body .icon#fb {
         background-position: center !important;
 
     border-bottom:0px solid #FFFFFF;
     transition:0.2s ease-out all;
     opacity:0.8;
    }
-   body .sp_fb_small a {
+   body .icon#fb {
     background-image:url('../img/social-icons.png') !important;
         background-position:70% 0 !important;
 
@@ -508,7 +508,7 @@ body .sp_em_small a {
     opacity:1;
    }
 
-body .sp_fb_small a:hover {
+body .icon#fb:hover {
     border-bottom:2px solid #fff;
     transition:0.15s ease-in all;
     opacity:0.8;

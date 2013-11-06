@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Announcing The Stop Watching Us Video"
+title:  "Stop Watching Us: The Video"
 date:   2013-10-23
 excerpt: 
 hideshare: true
@@ -29,9 +29,7 @@ It's pretty powerful, watch it now: <br /><br />
           <a data-network="twitter" href="https://twitter.com/home?status=The one video everyone needs to see about NSA spying -> https://rally.stopwatching.us #StopWatchingUs" count="0" target="_blank" id="tweet-box2" class="social-count"><div id="stwit" class="icon"></div></a>
         </div>
 
-        <div>
-          <div data-network="facebook" class='sp_971 sp_fb_small social-count' count="0"></div>
-        </div>
+            <a data-network="facebook" href="https://www.facebook.com/share.php?u=https://rally.stopwatching.us" count="0" target="_blank" id="facebook" class="social-count sp_fb_small"><div id="fb" class="icon"></div></a>
 
         <div style="height:64px; padding-left:1px;">
           <a data-network="googleplus" count="0" href="https://plus.google.com/share?url=https://rally.stopwatching.us" id="gplus" target="_blank"  class="social-count google-button"> 
